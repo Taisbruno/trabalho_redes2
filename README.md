@@ -20,12 +20,12 @@ Pygame, Orientação a Objetos, Biblioteca Pickle, etc, para prosseguir com a im
 
 ## Instruções para execução da demonstração:
 
-- Usar o comando "git clone..." para clonar o repositório e ter acesso ao código na sua máquina.
+- Usar o comando "git clone https://github.com/Taisbruno/trabalho_redes2.git" para clonar o repositório e ter acesso ao código na sua máquina.
 
 - Ter o Servidor Linode configurado e rodando, de preferência com uma imagem Ubuntu. Esse servidor já vem com o Python instalado dentro dele.
 
 - Instalar o software PuTTY para acessar o servidor remotamanete por meio de um terminal emulado. Para acessar, é necessária a inserção do endereço IPv4 do servidor, assim como a senha de acesso do mesmo. Dentro do software PuTTY, inserir o endereço IP citado, porta 22, conexão do tipo SSH, e clicar em "Open". No terminal, realizar login com o usuário: root. A senha será a configurada para acessar o Servidor Linode previamente. 
- - Aplicar os comandos:
+ - Quando já estiver conectado ao servidor pelo terminal do PuTTY, aplicar os comandos:
  1. "cd .."
  2. "ls"
  3. "cd root"
@@ -33,15 +33,15 @@ Pygame, Orientação a Objetos, Biblioteca Pickle, etc, para prosseguir com a im
  5. "cd trabredes"
 Os comandos acima são importantes para navegar pelo terminal e criar a pasta para qual o arquivo server.py será transferido posteriormente.
 
-- Instalar o Software WinSCP para se conectar ao servidor por meio do endereço IPv4 do mesmo e de sua senha de acesso(configurada durante a configuração do Servidor Linode). Dentro do software WinSCP, inserir o endereço IP citado, porta 22, protocolo de transferência de arquivo SFTP, Username: root, inserir a senha de acesso do servidor, e clicar em "Login". Entrar na pasta "trabredes" criada, copiar o arquivo Server_.py e o arquivo Game_.py para dentro do servidor.
+- Instalar o Software WinSCP para se conectar ao servidor por meio do endereço IPv4 do mesmo e de sua senha de acesso(configurada durante a configuração do Servidor Linode). Dentro do software WinSCP, inserir o endereço IP citado, porta 22, protocolo de transferência de arquivos SFTP, Username: root, inserir a senha de acesso do servidor, e clicar em "Login". Entrar na pasta "trabredes" criada, copiar o arquivo server_.py e o arquivo game_.py para dentro do servidor.
 
-- Voltar ao PuTTY, e dentro da pasta chamada "trabredes", executar o arquivo server_py com o uso do comando: python3 server_.py. 
+- Voltar ao terminal do PuTTY, e dentro da pasta chamada "trabredes", executar o arquivo server_.py com o uso do comando: "python3 server_.py". Nesse momento aparecerá uma mensagem no terminal com a frase: "Aguardando Conexão".
 
-- Abrir a IDLE escolhida que contem os códigos clonados do repositório, e executar apenas o arquivo client.py no modo DEBUG. Esse arquivo client.py deverá ser executado pelo menos duas vezes para que uma conexão possa ser estabalecida entre duas instâncias da aplicação.
+- Abrir a IDLE escolhida que contem os códigos clonados do repositório, e executar apenas o arquivo client_.py no modo DEBUG. Esse arquivo client_.py deverá ser executado pelo menos duas vezes para que uma conexão possa ser estabalecida entre duas instâncias da aplicação.
 
-- Para que uma conexão possa ser estabelecida de fato, é necessário não apenas executar os clients, como também dentro da tela do Client, clicar na tela de "Clique para jogar!". Quando duas instâncias de client estiverem conectadas entre si, será possível ver, pelo terminal, que ambas estão conectadas, assim como o endereço IPv4 de localização da máquina em que esses clients foram abertos.
+- Para que uma conexão possa ser estabelecida de fato, é necessário não apenas executar os clients, como também dentro da tela do Client aberto, clicar na tela de "Clique para jogar!". Quando duas instâncias de client estiverem conectadas entre si, será possível ver, pelo terminal, que ambas estão conectadas, assim como o endereço IPv4 de localização da máquina em que esses clients foram abertos.
 
-- Com dois clients conectados na mesma partida, testar o jogo para esses dois players. Selecionar alguma opção de botão(Pedra, Papel ou Tesoura) para o primeiro client e em seguida escolher uma segunda opção de botão para o segundo client. Assim que ambos os players já tiverem escolhido uma opção, será exibida na tela o resultado final sobre qual player ganhou aquela rodada e qual player perdeu. Os movimentos são automaticamente resetados em seguida para que uma próxima rodada entre esses players possa acontecer. 
+- Com dois clients conectados na mesma partida, testar o jogo para esses dois players. Selecionar alguma opção de botão (Pedra, Papel ou Tesoura) para o primeiro client e em seguida escolher uma segunda opção de botão para o segundo client. Assim que ambos os players já tiverem escolhido uma opção, será exibida na tela o resultado final sobre qual player ganhou aquela rodada e qual player perdeu. Os movimentos são automaticamente resetados em seguida para que uma próxima rodada entre esses players possa acontecer. 
 
 - Após testar o funcionamento do jogo, fechar os dois clients, matar os terminais abertos pela IDLE no modo DEBUG, e abrir o terminal emulado para visualizar a conexão perdida ao fechar um dos clients e o fechamento da conexão entre os clients em seguida.
 
