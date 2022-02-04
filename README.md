@@ -31,7 +31,7 @@ Pygame, Orientação a Objetos, Biblioteca Pickle, etc, para prosseguir com a im
  3. "cd root"
  4. "mkdir trabredes"
  5. "cd trabredes"
-Os comandos acima são importantes para navegar pelo terminal e criar a pasta para qual o arquivo server.py será transferido posteriormente.
+.Os comandos acima são importantes para navegar pelo terminal e criar a pasta para qual o arquivo server.py será transferido posteriormente.
 
 - Instalar o Software WinSCP para se conectar ao servidor por meio do endereço IPv4 do mesmo e de sua senha de acesso(configurada durante a configuração do Servidor Linode). Dentro do software WinSCP, inserir o endereço IP citado, porta 22, protocolo de transferência de arquivos SFTP, Username: root, inserir a senha de acesso do servidor, e clicar em "Login". Entrar na pasta "trabredes" criada, copiar o arquivo server_.py e o arquivo game_.py para dentro do servidor.
 
